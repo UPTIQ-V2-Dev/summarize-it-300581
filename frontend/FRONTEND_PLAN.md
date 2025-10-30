@@ -84,7 +84,33 @@ A React 19 application with Vite, shadcn/ui, and Tailwind v4 for text summarizat
 
 ---
 
-### 4. Settings Page (`/settings`)
+### 4. Login Page (`/login`)
+
+**Components:**
+
+- `LoginPage` - Main login page wrapper
+- `LoginForm` - Login form with email/password fields
+- `AuthCard` - Card container for authentication
+- `LoginButton` - Submit button with loading state
+- `ForgotPasswordLink` - Password recovery navigation
+
+**Features:**
+
+- User authentication
+- Form validation
+- Loading states
+- Error handling
+- Redirect after successful login
+
+**API Integration:**
+
+- `POST /api/auth/login` - User authentication endpoint
+- Request: `{ email: string, password: string }`
+- Response: `{ user: User, tokens: TokenPair }`
+
+---
+
+### 5. Settings Page (`/settings`)
 
 **Components:**
 

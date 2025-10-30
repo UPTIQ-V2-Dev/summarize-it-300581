@@ -4,6 +4,7 @@ import { Toaster } from '@/components/ui/sonner';
 import { ThemeProvider } from '@/hooks/useTheme';
 import { LandingPage } from '@/pages/LandingPage';
 import { SummaryToolPage } from '@/pages/SummaryToolPage';
+import { LoginPage } from '@/pages/LoginPage';
 
 const queryClient = new QueryClient({
     defaultOptions: {
@@ -30,6 +31,10 @@ export const App = () => {
                             <Route
                                 path='/'
                                 element={<LandingPage />}
+                            />
+                            <Route
+                                path='/login'
+                                element={<LoginPage />}
                             />
                             <Route
                                 path='/summarize'
