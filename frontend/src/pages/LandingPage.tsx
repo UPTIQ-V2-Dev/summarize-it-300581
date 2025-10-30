@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { ThemeToggle } from '@/components/ui/theme-toggle';
 import { ArrowRight, FileText, Sparkles, Zap, Clock, Target } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -30,6 +31,11 @@ export const LandingPage = () => {
 
     return (
         <div className='min-h-screen bg-background'>
+            <header className='container mx-auto px-4 py-4'>
+                <div className='flex justify-end'>
+                    <ThemeToggle />
+                </div>
+            </header>
             <div className='container mx-auto px-4'>
                 <section className='py-16 lg:py-24 text-center'>
                     <div className='max-w-3xl mx-auto space-y-6'>

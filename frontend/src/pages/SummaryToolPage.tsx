@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { TextInputPanel } from '@/components/summary/TextInputPanel';
 import { SummaryOutputPanel } from '@/components/summary/SummaryOutputPanel';
 import { SummaryControls } from '@/components/summary/SummaryControls';
+import { ThemeToggle } from '@/components/ui/theme-toggle';
 import { useSummarization, useSaveSummary } from '@/hooks/useSummarization';
 import { toast } from 'sonner';
 import type { SummaryOptions, SummaryResponse } from '@/types/summary';
@@ -98,6 +99,11 @@ export const SummaryToolPage = () => {
 
     return (
         <div className='min-h-screen bg-background'>
+            <header className='container mx-auto px-4 py-4'>
+                <div className='flex justify-end'>
+                    <ThemeToggle />
+                </div>
+            </header>
             <div className='container mx-auto px-4 py-6'>
                 <div className='grid grid-cols-1 lg:grid-cols-4 gap-6 h-[calc(100vh-6rem)]'>
                     <div className='lg:col-span-3'>
